@@ -3,7 +3,12 @@
   "compilerOptions": {
     "outDir": "dist",
     "declaration": true,
-    "noEmit": false
+    "noEmit": false,
+    "baseUrl": ".",
+    "paths": {
+      "@wagmi/core": ["node_modules/@wagmi/core/dist"],
+      "abitype": ["node_modules/abitype/dist"]
+    }
   },
   "include": [
     "src/generated.ts"
